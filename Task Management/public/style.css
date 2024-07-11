@@ -1,0 +1,606 @@
+/*
+ * Ryan Nguyen
+ * style.css
+ * Style sheet for both main.html and index.html
+ */
+
+
+#indexBody{
+    background-color: #1C1C1C;
+    background-image: linear-gradient(to top left, #6237A0 1%, #1C1C1C);
+    margin: 0;
+}
+
+
+/* Welcome Texts container */
+#welcome-container{
+    /*dimension*/
+    width: 300px;
+    height: 500px;
+
+    /*positioning*/
+    padding-top: 100px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#welcome-container h1{
+    /*font for all H1 inside of welcome container*/
+    font-family: "Kanit", sans-serif;
+    color: white;
+}
+
+#welcome-header{
+    /*Font size of welcome*/
+    font-size: 55px;
+}
+
+/*changing font and positioning "Taskify"*/
+#taskify-header{
+    font-size: 48px;
+    position: relative;
+    top: -60px;
+}
+
+/*stylinging the next line tag*/
+#nextline-header{
+    font-size: 40px;
+
+    /*positioning*/
+    position: relative;
+    top: -159px;
+    left: 170px;
+
+    /*blinking effect set to forever loop "blink"*/
+    animation: blink 1.3s linear infinite;
+}
+
+/*grabbed synthax and snippets of code from W3School and changed it to my preference*/
+@keyframes blink{
+    25%{ /*at 25% of animation change css to 1;*/
+        opacity: 1;
+    }
+    50% { /*at 50% of animation change css to 0.5 (fading away);*/
+        opacity: 0.5;
+    }
+    75% {  /*at 75% of animation change css to 0 (completely gone);*/
+        opacity: 0;
+    }
+    100%{  /*at 100% of animation change css to 1 (completely back again for another loop);*/
+        opacity: 1;
+    }
+}
+
+
+/*-------------------- Login and Sign up Container ----------------------*/
+
+/*login/signup container*/
+#menu-container{
+    /*Dimensions & setting overflow*/
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    /*stylings*/
+    background-color: #1C1C1C;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid #202637;
+    border-radius: 15px;
+
+    /*positioning*/
+    margin-left: 58%;
+    position: absolute;
+    top: 300px;
+}
+
+/*active class when one of the tabs are clicked*/
+
+
+/*positioning Button inside of container*/
+#menu-container > button{
+    /*dimensions & position*/
+    width: 200px;
+    height: 40px;
+    float: left;
+    cursor: pointer;
+    transition: 0.4s;
+
+    /*Style and font*/
+    color: black;
+    font-size: 15px;
+    font-family: "Kanit", sans-serif;
+    border-style: none;
+}
+
+/*active class when one of the tabs are clicked*/
+.active{
+    /*styling tab*/
+    background-color: #1C1C1C;
+    color: white !important;
+
+}
+
+
+/*---------------- Tabs ---------------- */
+
+.tabContent{
+    /*Styling div background and corners*/
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    /*Dimensions*/
+    width: 400px;
+    height: 260px;
+    
+    /*positioning*/
+    margin-left: 58%;
+    position: absolute;
+    top: 340px;
+    display: none;
+}
+
+#login-container{
+    /*showing login tab on default*/
+    display: block;
+}
+
+/*--------------- Login Tab ------------------*/
+
+
+#user-login-label, #password-login-label{
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Positioning login label in login tab */
+#user-login-label{
+    position: relative;
+    top: 30px;
+    left: -190px;
+}
+
+/*Position password on login tab */
+#password-login-label{
+    position: relative;
+    left: -188px;
+    top: 80px;
+
+}
+/*Styling username (login) Input*/
+#user-login-input{
+    height: 35px;
+    width: 240px;
+
+    float: left;
+    position: relative;
+    top: 60px;
+    left: 48px;
+
+    
+    border-radius: 10px;
+    border-style: 1px solid black;
+}
+
+
+
+/*styling password (login) input*/
+#password-login-input{
+    height: 35px;
+    width: 240px;
+
+    float: left;
+    position: relative;
+    top: 80px;
+    left: 50px;
+
+    border-radius: 10px;
+}
+
+
+#user-login-input[type=text],#password-login-input[type=text], #signup-container > input[type=text],#signup-container > input[type=password] {
+    padding-left: 5px;
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+}
+
+
+/*----------------- Sign up Tab -----------------*/
+
+/* Giving all input the same style & Dimension*/
+#signup-container > input{
+    width: 240px;
+    height: 35px;
+    border: 1px solid black;
+
+    border-radius: 10px;
+}
+
+/*Giving all label same style*/
+#signup-container > label{
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+/* header in sign up tab */
+#createaccount-header{
+    /*Font & Style */
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/*------------ Positioning signup labels ---------------*/
+
+#signup-name-label{
+    /*Positioning signup name label*/
+    position: relative;
+    top: -35px;
+    left: 40px;
+}
+
+#user-signup-label{
+    position: relative;
+    top: -13px;
+    left: 40px;
+}
+
+#password-signup-label{
+    position: relative;
+    top: 14px;
+    left: 40px ;
+}
+
+/*--------- Positioning input bars inside of signup -----------*/
+
+#signup-name-input{
+    /*positioning input bar*/
+    position: relative;
+    top: -10px;
+    left: -40px;
+}
+
+#user-signup-input{
+    position: relative;
+    top: 15px;
+    left: -47px;
+}
+
+#password-signup-input{
+    position: relative;
+    top: 40px;
+    left: -41px;
+}
+
+
+/* Login button */
+#loginbtn{
+    /* Changing Dimension */
+    height: 40px;
+    width: 100px;
+
+    /*font*/
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #6237A0;
+
+    /*styling*/
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease 0.2ms;
+    
+
+    /* positioning */
+    position: relative;
+    top: 130px;
+    left: 20px;
+
+}
+
+/* Sign up button */
+#signup-btn{
+    position: relative;
+    left: 295px;
+    top: 6px;
+
+    /*font*/
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+
+
+    /* Styles */
+    border-style: none;
+    border-radius: 10px;
+    background-color: #6237A0;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease 0.2ms;
+
+    width: 90px;
+    height: 35px;
+}
+
+#signup-btn:hover, #loginbtn:hover{
+    box-shadow: 2px 15px 15px rgba(98, 55, 160, 0.4); 
+    transform: translateY(-2px); 
+}
+
+/* Incorrect message(header) */
+
+#login-container > h4{
+    width: 250px;
+    height: 30px;
+
+    position: relative;
+    top: 75px;
+    left: 50px;
+
+    color: red;
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+    display: none;
+}
+
+/*Header inside of signup container */
+#signup-container > h4{
+    /* changing font*/
+    color: red;
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+    width: 100px;
+    
+
+    /*positioning*/
+    position: relative;
+    top: -180px;
+    left: 295px;
+
+    display: none;
+}
+
+
+
+/* ----------------------------- main.html ------------------------------------ */
+
+#mainBody{
+background-color:#1C1C1C;
+}
+
+#mainBody{
+    margin: 0;
+}
+
+#mainMain{
+    background-color:#1C1C1C;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 20px;
+}
+
+
+/* header and add button */
+#mainMain > h1{
+    font-family: "Kanit", sans-serif;
+    color: white;
+    font-size: 30px;
+    /*positioning*/
+    position: relative;
+    top: 75px;
+    padding-left: 130px;
+}
+
+/* add button */
+#addBtn{
+    width: 50px;
+    height: 50px;
+
+    /* positioning */
+    position: relative;
+    left: 90%;
+    
+
+    /*Font & Styling*/
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    background-color: #6237A0;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease 0.2ms;
+    border-style: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* transform effect gotten from last project */
+#addBtn:hover{
+    transform: translateY(-4px);
+}
+
+
+
+/* ----------- Dashboard tasks -------------- */
+
+#dashboard-tasks{
+    /* Poisitioning of tasks */
+    margin-left: 12%;
+    position: relative;
+    top: 20px;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#task-heading{
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+/* ----------------- TASK & TASK CONTENT ---------------*/
+#tasks{
+    width: 250px;
+    height: 140px;
+    margin: 1rem;
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+#tasks > h3 {
+    /* Positioning */
+    text-align: center;
+    padding-top: 20px;
+
+    /* Font */
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    color: #6237A0;
+
+}
+
+#tasks > p {
+    /*position paragraph */
+    text-align: center;
+    padding-top: 0px;
+    margin: 0 auto;
+
+    font-family: "Kanit", sans-serif;
+    color: #6237A0;
+}
+
+#tasksFunction{
+    width: 100%;
+    padding-top: 25px;
+    position: relative;
+    left: 90px;
+    font-size: 25px;
+}
+
+#tasksFunction > span{
+    transition: all 0.3s ease 0.2ms;
+    cursor:pointer;
+}
+
+
+#checkmark:hover{
+    color: green;
+}
+#trashcan:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+/* ----------- Popup add window ------------- */
+.activeBlur{
+    min-height: 100%;
+    filter: blur(4px);
+}
+#popup{
+    width: 400px;
+    height: 300px;
+
+    border-radius: 10px;
+
+    background-color: #202637;
+    margin: 0 40%;
+    display: none;
+    position: absolute;
+    top: 35%;
+    /*left: 575px;*/
+}
+
+#popup-content{
+    padding-left: 18px;
+}
+
+/* header in popup */
+#popup-content > h2{
+    padding-top: 35px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    color: white;
+
+    position: relative;
+    left: -10px;
+}
+
+#popup-content > input{
+    /*positioning*/
+    margin-top: 20px;
+    width: 95%;
+    height: 40px;
+    position: relative;
+    top: -60px;
+
+    /* Styling */
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom:2px solid #6237A0;
+    outline: none;
+
+    /* Font */
+    font-family: "Kanit", sans-serif;
+    color: white;
+}
+
+/* create button inside of popup */
+#createTaskBtn{
+    height: 40px;
+    width: 100px;
+
+    /* Styling */
+    border-radius: 10px;
+    border-style: none;
+    background-color:#6237A0; 
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease 0.2ms;
+    
+    /* Positioning */
+    margin-left: 130px;
+    position: relative;
+    top: -30px;
+}
+
+#createTaskBtn:hover{
+    box-shadow: 2px 15px 15px rgba(98, 55, 160, 0.4); 
+    transform: translateY(-2px);
+}
+
+#closeSpan{
+    /* Positioning x button */
+    position: relative;
+    top: -90px;
+    left: 340px;
+
+    /*Dimension*/
+    width: 30px;
+
+    /* font */
+    font-family: "Kanit", sans-serif;
+    font-size: 30px;
+
+    /* styling */
+    transition: all 0.3s ease 0.2ms;
+
+}
+
+/* hover affect for popup window x */
+#closeSpan:hover{
+    color: red;
+}

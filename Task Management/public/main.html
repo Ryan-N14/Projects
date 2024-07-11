@@ -1,0 +1,75 @@
+<!--
+    Ryan Nguyen
+    main.html
+    dashboard page presenting all of the tasks 
+-->
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!---->
+    <!--ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Taskify Dashboard</title>
+</head>
+<body id="mainBody">
+    <main id="mainMain">
+        <h1></h1>
+
+        <!-- Add button-->
+        <button id="addBtn">
+            <span>
+                <ion-icon name="add-outline"></ion-icon>
+            </span>
+        </button>
+
+        <!-- Tasks -->
+        <div id="dashboard-tasks">
+            <div id="overdueColumns">
+                <div id="task-heading">
+                    <h2>Overdue</h2>
+                </div>
+            </div>
+
+            <div id="inprogress-Tasks">
+                <div id="task-heading">
+                    <h2>In Progress</h2>
+                </div>  
+            </div>
+
+            <div id="pastTasks">
+                <div id="task-heading">
+                    <h2>Done</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pop up -->
+    <div id="popup">
+        <div id="popup-content">
+            <h2>Create a Task</h2>
+            <div id="closeSpan"><ion-icon name="close-outline"></ion-icon></div>
+            <input type="text" placeholder="Task Name" id="taskInput">
+            <input type="date" placeholder="Due Date" id="dateInput">
+            <button id="createTaskBtn">Create</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

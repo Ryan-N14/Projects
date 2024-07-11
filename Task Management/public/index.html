@@ -1,0 +1,67 @@
+<!--
+    Ryan Nguyen
+    index.html
+    The landing page when you access augwebapps.com:3132 
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!------------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Task-ify</title>
+</head>
+<body id="indexBody">
+    <main>
+        <!-- Welcome text and bar -->
+        <div id="welcome-Container">
+            <h1 id="welcome-header">Welcome to</h1>
+            <h1 id="taskify-header">Taskify</h1>
+            <h1 id="nextline-header">|</h1>
+        </div>
+        <!-- Sign up and Login tabs -->
+        <div id="menu-container">
+            <button id="signuptab">Sign up</button>
+            <button id="logintab" class="active">Login</button>
+        </div>
+
+        <!-- Sign up portion of sign up tab-->
+        <div id="signup-container" class="tabContent">
+            <div id="createaccount-header"><h3>Create Account</h3></div>
+            
+            <label for="name" id="signup-name-label">Fullname</label>
+            <input type="text" placeholder="Enter fullname" id="signup-name-input">
+            
+            <label for="username" id="user-signup-label">Username</label>
+            <input type="text" id="user-signup-input" placeholder="Enter username (max-character: 50)" maxlength="50">
+            
+            <label for="password" id="password-signup-label">Password</label>
+            <input type="password"  id="password-signup-input" placeholder="Enter password (max-character: 12)" maxlength="12" >
+            
+            <button id="signup-btn">Create</button>
+
+            <h4>Username or Password already has an account assiocated with it...</h4>
+        </div>
+
+        <!-- login portion of login tab-->
+        <div id="login-container" class="tabContent">
+            <label for="user-login-input" id="user-login-label">Username</label>
+            <input type="text" id="user-login-input" placeholder="Username">
+
+            <label for="password-login-input" id="password-login-label" >Password</label>
+            <input type="password" id="password-login-input" placeholder="Password" maxlength="12">
+            
+            <button id="loginbtn">Login</button>
+            <h4>Username or Password <br> is incorrect</h4>
+        </div>
+    </main>
+</body>
+</html>
