@@ -1,0 +1,32 @@
+A Z 31
+A R
+B G H N
+C AD D R
+D AD C E
+E D F K
+F AD E G
+G F B H P
+H B G I P
+I
+J M Y T
+K 
+L W M AB AC
+M L J X AC
+N
+O P S U
+P G H O Q V
+Q
+R C W
+S
+T J AB AE
+U O V X
+V P U Y
+W R L X AB
+X M U W
+Y J V AE
+Z
+AA
+AB W L T
+AC
+AD C D F
+AE Y T Z AA
